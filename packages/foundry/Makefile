@@ -1,4 +1,4 @@
-.PHONY: build deploy generate-abis get-address account chain compile flatten fork format lint test verify
+.PHONY: build deploy generate-abis get-address account chain compile flatten fork format lint test verify test-vaultfactory deploy-vaultfactory
 
 DEPLOY_SCRIPT ?= script/Deploy.s.sol
 
@@ -54,6 +54,14 @@ lint:
 # Run tests
 test:
 	forge test
+
+# Run VaultFactory tests specifically
+test-vaultfactory:
+	forge test --match-contract VaultFactoryTest -vv
+
+# Deploy VaultFactory contract
+deploy-vaultfactory:
+	forge script script/DeployVaultFactory.s.sol --rpc-url http://localhost:8545 --broadcast
 
 # Verify contracts
 verify:
