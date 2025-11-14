@@ -24,23 +24,8 @@ TradePro is a **decentralized autonomous investment platform** that bridges prof
 
 ### 🎯 Core Concept
 
-```mermaid
-graph TB
-    A[👥 Users] -->|💰 Deposit ETH| B[🏦 Investment Vault]
-    C[👨‍💼 Professional Trader] -->|📈 Trading Strategies| B
-    B -->|🔄 Smart Contract Logic| D[💹 DeFi Operations]
-    D -->|📊 Generate Returns| E[💵 Revenue Pool]
-    E -->|📈 Proportional Share| A
-    E -->|💎 Performance Fee| C
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
-```
+![Core Concept Diagram](./images/TradePro3.png)
 
----
 
 ## 🏗️ System Architecture
 
@@ -97,7 +82,70 @@ graph TB
 ```
 
 ---
+🧪 Base Sepolia Testnet Setup & Free Test ETH Guide
+<center>
 
+
+
+
+
+
+</center>
+
+🚀 Adding Base Sepolia Testnet to MetaMask
+
+-----------------------------------------------------------------------------------------
+
+Follow the steps below to enable the Base Sepolia network in your MetaMask wallet:
+
+Open MetaMask.
+
+Click the network dropdown at the top.
+
+Select "Show/hide test networks".
+
+Enable the “Test networks” toggle.
+
+If Base Sepolia appears in the list — select it.
+
+If it does not appear automatically, add it manually using the details below:
+
+- Network Name: Base Sepolia
+- RPC URL: https://sepolia.base.org
+- Chain ID: 84532
+- Currency Symbol: ETH
+- Block Explorer URL: https://sepolia.basescan.org
+
+💧 Getting Free Test ETH (Base Sepolia) via Google Cloud Faucet
+
+You can request free test ETH for development directly from Google Cloud:
+
+🔥 Official Faucet:
+https://cloud.google.com/application/web3/faucet
+
+How to request:
+
+Copy your MetaMask wallet address (starts with 0x...).
+
+Open the Google Cloud Web3 Faucet.
+
+Select Base Sepolia in the network dropdown.
+
+Paste your wallet address.
+
+Complete the captcha.
+
+Click Send — your test ETH should arrive shortly.
+
+📌 Tips
+
+Base Sepolia ETH is test-only, has no real value, and is used only for development.
+
+If the faucet rate-limits you, try again later.
+
+Ensure you selected Base Sepolia in MetaMask before testing transactions.
+
+If you'd like the same style block for any other testnet (Polygon, Arbitrum, Optimism, BNB, etc.) — I can generate it as well.
 ## ⚡ Key Features
 
 ### 🏦 **Professional Vault Management**
@@ -110,13 +158,6 @@ graph TB
 - **Monthly Subscriptions**: Affordable monthly fees (10-20 USD) for vault access
 - **Instant Liquidity**: Withdraw your funds at any time without lock-up periods
 
-### 🔄 **Automated Revenue Distribution**
-```mermaid
-pie title Revenue Distribution Model
-    "User Returns (70-80%)" : 75
-    "Trader Performance Fee (15-20%)" : 20
-    "Platform Fee (5%)" : 5
-```
 
 ### 🗳️ **Community Governance**
 - **Trader Rating System**: Like/dislike voting mechanism for trader performance
@@ -126,6 +167,7 @@ pie title Revenue Distribution Model
 ---
 
 ## 🚀 How It Works
+
 
 ### 1️⃣ **Vault Selection & Joining**
 
@@ -353,25 +395,8 @@ Each vault is presented with:
 
 ---
 
-## 📊 Performance Metrics
 
-### **Platform Statistics** (Live Data)
-```
-📈 Total Value Locked (TVL): $2.5M+ USD
-👥 Active Users: 1,200+ investors  
-🏦 Available Vaults: 3 professional traders
-💰 Average APY: 70-80% across all vaults
-📅 Platform Uptime: 99.9%
-```
 
-### **Vault Performance History**
-| Vault | 2022 APY | 2023 APY | 2024 APY | Risk Level |
-|-------|----------|----------|----------|------------|
-| Mike's Conservative | 45% | 52% | 48% | Low |
-| James's Balanced | 65% | 70% | 75% | Medium |
-| John's Aggressive | 95% | 110% | 120% | High |
-
----
 
 ## 🤝 Contributing
 
@@ -393,33 +418,7 @@ We welcome contributions from the community! Here's how you can help:
 
 ---
 
-## 🗺️ Roadmap
 
-### **Phase 1: Foundation** ✅
-- [x] Core smart contract development
-- [x] Basic vault functionality  
-- [x] Web3 frontend integration
-- [x] Initial trader onboarding
-
-### **Phase 2: Enhancement** 🚧
-- [ ] Advanced trading strategies
-- [ ] Mobile application
-- [ ] Multi-chain support (Polygon, BSC)
-- [ ] Advanced analytics dashboard
-
-### **Phase 3: Expansion** 📋
-- [ ] Institutional trader partnerships
-- [ ] Automated rebalancing algorithms
-- [ ] Cross-chain yield farming
-- [ ] Governance token launch
-
-### **Phase 4: Ecosystem** 💭
-- [ ] Third-party integrations  
-- [ ] API for external platforms
-- [ ] Educational content platform
-- [ ] Global trader marketplace
-
----
 
 ## 📜 License
 
@@ -430,15 +429,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 🆘 Support & Community
 
 ### **Get Help**
-- 📧 **Email**: support@tradepro.io
-- 💬 **Discord**: [Join our community](https://discord.gg/tradepro)
-- 🐦 **Twitter**: [@TradePro](https://twitter.com/tradepro)
-- 📖 **Documentation**: [Full docs](https://docs.tradepro.io)
+- 📧 **Email**: tradepro.web3@gmail.com
+- 🐦 **X**: [@TradePro](https://x.com/TradeProWeb3)
+- 📖 **Pitch Deck**: [Full presentation](https://docs.google.com/presentation/d/1Iw2cUxO_S5Vv2UQPCAiTglm8uVvyb059X0x86JlfMX4/edit?usp=sharing)
+- 
 
-### **Report Issues**
-Found a bug? Have a suggestion? [Open an issue](https://github.com/your-username/tradepro1/issues) on GitHub.
-
----
 
 ## ⚠️ Disclaimer
 
