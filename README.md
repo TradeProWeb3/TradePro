@@ -82,7 +82,7 @@ graph TB
 ```
 
 ---
-🧪 Base Sepolia Testnet Setup & Free Test ETH Guide
+🧪 BSC Testnet Setup & Free tBNB
 <center>
 
 
@@ -92,60 +92,58 @@ graph TB
 
 </center>
 
-🚀 Adding Base Sepolia Testnet to MetaMask
+🚀 Adding BSC Testnet to MetaMask
 
 -----------------------------------------------------------------------------------------
 
-Follow the steps below to enable the Base Sepolia network in your MetaMask wallet:
+To interact with the contracts deployed on BSC Testnet, you need to add the network to MetaMask.
 
-Open MetaMask.
+🔧 Network Configuration
 
-Click the network dropdown at the top.
+Open MetaMask → Settings → Networks → Add network and enter:
 
-Select "Show/hide test networks".
+Network Name: BSC Testnet
 
-Enable the “Test networks” toggle.
+RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545
 
-If Base Sepolia appears in the list — select it.
+Chain ID: 97
 
-If it does not appear automatically, add it manually using the details below:
+Currency Symbol: tBNB
 
-- Network Name: Base Sepolia
-- RPC URL: https://sepolia.base.org
-- Chain ID: 84532
-- Currency Symbol: ETH
-- Block Explorer URL: https://sepolia.basescan.org
+Block Explorer URL: https://testnet.bscscan.com
 
-💧 Getting Free Test ETH (Base Sepolia) via Google Cloud Faucet
+Save the network and switch to BSC Testnet.
 
-You can request free test ETH for development directly from Google Cloud:
+💰 Getting Test tBNB
 
-🔥 Official Faucet:
-https://cloud.google.com/application/web3/faucet
+You will need test tokens to pay gas fees.
+
+Get free tBNB from the official faucet:
+👉 https://testnet.bnbchain.org/faucet-smart
 
 How to request:
 
-Copy your MetaMask wallet address (starts with 0x...).
+🔹 Steps to Request tBNB
 
-Open the Google Cloud Web3 Faucet.
+Open the official BNB Chain faucet:
+👉 https://testnet.bnbchain.org/faucet-smart
 
-Select Base Sepolia in the network dropdown.
+Connect your wallet (MetaMask) or paste your BSC Testnet wallet address
 
-Paste your wallet address.
+Select BSC Testnet
 
-Complete the captcha.
+Request tBNB
 
-Click Send — your test ETH should arrive shortly.
+After a short delay, test BNB will be sent to your wallet.
 
-📌 Tips
+✅ Notes
 
-Base Sepolia ETH is test-only, has no real value, and is used only for development.
+Test BNB has no real value
 
-If the faucet rate-limits you, try again later.
+Faucet requests may be rate-limited
 
-Ensure you selected Base Sepolia in MetaMask before testing transactions.
+Make sure MetaMask is switched to BSC Testnet
 
-If you'd like the same style block for any other testnet (Polygon, Arbitrum, Optimism, BNB, etc.) — I can generate it as well.
 ## ⚡ Key Features
 
 ### 🏦 **Professional Vault Management**
@@ -259,64 +257,7 @@ sequenceDiagram
 ### **Web3 Integration**
 - **Viem**: TypeScript Ethereum library
 - **ConnectKit**: Wallet connection interface
-- **Ethereum**: Primary blockchain network
 
----
-
-## 🔧 Installation
-
-### **Prerequisites**
-```bash
-node >= 18.0.0
-npm >= 8.0.0
-git
-```
-
-### **1. Clone the Repository**
-```bash
-git clone 
-cd tradepro1
-```
-
-### **2. Install Dependencies**
-```bash
-# Install all packages
-npm install
-
-# Install Foundry (for smart contracts)
-curl -L https://foundry.paradigm.xyz | bash
-foundryup
-```
-
-### **3. Environment Setup**
-```bash
-# Copy environment template
-cp packages/nextjs/.env.example packages/nextjs/.env.local
-
-# Add your configuration
-NEXT_PUBLIC_ALCHEMY_API_KEY=your_alchemy_key
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=your_wallet_connect_id
-```
-
-### **4. Start Development**
-```bash
-# Start local blockchain (Terminal 1)
-cd packages/foundry
-make anvil
-
-# Deploy contracts (Terminal 2)
-cd packages/foundry
-make deploy-local
-
-# Start frontend (Terminal 3)  
-cd packages/nextjs
-npm run dev
-```
-
-### **5. Access Application**
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
 
 ## 📈 Smart Contract Functions
 
